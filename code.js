@@ -10,8 +10,16 @@ function sayHello(name) {
     {
         return "Hello, Obi!";
   }*/
-    if (name === undefined){
-        return "Hello, World!"
+    if (name === undefined) {
+        return "Hello, World!";
+    } if (name === true) {
+        return "Hello, World!";
+    }if (name === false) {
+        return "Hello, World!";
     }
     return "Hello, " + name + "!";
+}
+
+function isFive(input){
+    return (input === true);
 }
