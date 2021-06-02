@@ -37,13 +37,12 @@ describe("sayHello", function(){
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
-
+const randomNumber = Math.ceil(Math.random() * 100)
 describe("isFive", function() {
     it("should exist", function () {
         expect(typeof isFive).toBe("function")
     });
     it('should return a boolean ', function() {
-        expect(isFive(input)).toBe(true, false);
+        expect(typeof isFive(randomNumber, randomNumber)).toBe('boolean')
     });
-
 });
